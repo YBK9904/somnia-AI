@@ -8,14 +8,16 @@
 </head>
 <body>
   <main class="wrap">
-    <div class="brand">Somnia AI</div>
-    <h1>Privacy Policy</h1>
-    <p class="lede">Last updated 4 September 2026</p>
-    <nav class="langs">
-      <a class="active" href="privacy.html">English</a>
-      <a href="privacy-tr.html">Türkçe</a>
+    <div class="brand"><span class="moon" aria-hidden="true"></span> Somnia AI</div>
+    <h1 data-en="Privacy Policy" data-tr="Gizlilik Politikası">Privacy Policy</h1>
+    <p class="lede" data-en="Last updated 4 September 2026" data-tr="Son güncelleme 4 Eylül 2026">Last updated 4 September 2026</p>
+
+    <nav class="langs" role="tablist" aria-label="Language">
+      <button type="button" role="tab" id="tab-en" aria-selected="true" data-lang="en">English</button>
+      <button type="button" role="tab" id="tab-tr" aria-selected="false" data-lang="tr">Türkçe</button>
     </nav>
-    <article class="card">
+
+    <article class="card copy" data-copy="en">
       <h2>Who we are</h2>
       <p>Somnia AI (“Somnia”, “we”) is a dream journal for entertainment and personal reflection. Contact: <a href="mailto:support@somnia-ai.app">support@somnia-ai.app</a>.</p>
 
@@ -24,9 +26,6 @@
 
       <h2>What we send to generate a reading</h2>
       <p>When you tap Analyze, the dream text, the mood you picked, your language, and any optional profile notes are sent to our language-model provider so Somnia can write a reading. We do not sell this text. We do not send your name to advertising networks.</p>
-
-      <h2>Microphone and speech</h2>
-      <p>If you use dictation, Apple’s on-device / system speech recognition transcribes your words into the editor. Somnia does not send audio to its own servers.</p>
 
       <h2>Ads</h2>
       <p>Free journals may see an interstitial after a reading, never before analysis. Premium journals never see ads. Ad networks may receive a standard advertising identifier according to Apple’s rules.</p>
@@ -43,7 +42,39 @@
       <h2>Changes</h2>
       <p>We may update this policy. The date at the top of the page is the latest version.</p>
     </article>
+
+    <article class="card copy" data-copy="tr" hidden>
+      <h2>Biz kimiz</h2>
+      <p>Somnia AI (“Somnia”) eğlence ve kişisel düşünme için bir rüya günlüğüdür. İletişim: <a href="mailto:support@somnia-ai.app">support@somnia-ai.app</a>.</p>
+
+      <h2>iPhone’unda kalanlar</h2>
+      <p>Rüyalar, duygular, isteğe bağlı profil yanıtları ve ayarlar yalnızca cihazındaki uygulama deposunda durur. Somnia sunucularına yüklenmez.</p>
+
+      <h2>Yorum üretilirken gidenler</h2>
+      <p>Analiz Et’e bastığında rüya metni, seçtiğin duygu, dilin ve paylaşmayı seçtiğin profil notları dil modeline gönderilir. Bu metni satmayız. Adın reklam ağlarına gitmez.</p>
+
+      <h2>Reklamlar</h2>
+      <p>Ücretsiz günlük, bir yorumun ardından geçiş reklamı görebilir; analizden önce asla. Premium günlük reklam görmez. Reklam ağları Apple’ın kurallarına göre standart bir reklam tanıtıcısı alabilir.</p>
+
+      <h2>Satın almalar</h2>
+      <p>Abonelikler Apple üzerinden işlenir. Somnia ödeme bilgilerini görmez. Satın almaları geri yüklemek, Apple ID’ne bağlı hakkı Apple’dan sorar.</p>
+
+      <h2>Verini silmek</h2>
+      <p>Ayarlar → Tüm verileri sil, bu cihazdaki rüyaları ve profili kaldırır. Uygulamayı silmek de aynı işi görür. Abonelik kayıtlarını Apple ayrı tutar.</p>
+
+      <h2>Çocuklar</h2>
+      <p>Somnia 13 yaşından (veya yerel yasaların gerektirdiği 16 yaşından) küçük çocuklara yönelik değildir.</p>
+
+      <h2>Değişiklikler</h2>
+      <p>Bu politikayı güncelleyebiliriz. Sayfanın üstündeki tarih en son sürümü gösterir.</p>
+    </article>
+
+    <nav class="links">
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <footer>Somnia AI · support@somnia-ai.app</footer>
   </main>
-
+  <script src="lang.js"></script>
+</body>
 </html>
